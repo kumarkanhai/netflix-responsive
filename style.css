@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main{
+    background-image:url(assets/images/bg1.jpg);
+    height: 110vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: max(2550px, 100vw);
+    position: relative;
+}
+.bg-black{
+    background-color: black;
+    position: absolute;
+    height: 110vh;
+    width: 100%;
+    top: 0px;
+    opacity: 0.7;
+}
+.nav{
+    max-width: 70vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+}
+.nav-right{
+    display: flex;
+    gap: 10px;
+    
+}
+.nav-right .part1{
+    display: flex;
+    border: 1px solid white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #0F1011;
+}
+.nav-right .part1 select{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+.nav-right .part1 img{
+    filter: invert(1);
+}
+.nav-right button{
+    padding: 10px 18px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+.hero-section{
+    height: 80%;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-section> :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;   
+}
+.hero-section> :nth-child(2){
+    font-size: 24px;
+    font-weight: 100;
+    padding-top: 20px;
+}
+.hero-section> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.hero-section div{
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+}
+.hero-section div input{
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    border: 0.15px solid white;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.472);
+    position: relative;
+}
+.hero-section div button{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E40914;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.hero-section div button img{
+    filter: invert(2);
+}
+
+.seperator{
+    width: 100%;
+    height: 8px;
+    min-height: auto;
+    background-color: rgb(35,35,35);
+}
+.animation{
+    height: 80vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    color: white;
+}
+.text :first-child{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.text :nth-child(2){
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.images{
+    position: relative;
+}
+.images img{
+    height: 100%;
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+}
+video{
+    height: 45%;
+    position: absolute;
+    right: 110px;
+    top: 51px;
+}
+.faq{
+    background-color: black;
+    color: white;
+}
+.faq h2{
+    text-align: center;
+    font-size: 3rem;
+    padding: 34px 0;
+}
+.faqbox{
+    background-color: #414141;
+    padding: 24px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-width: 80vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.faqbox> :nth-child(2){
+    filter: invert(1);
+}
+.faqbox:hover{
+    background-color: #645d5d;
+}
+
+.faq p{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+section .search{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+section .search input{
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    border: 0.15px solid white;
+    width: 45vw;
+    background: rgba(0, 0, 0, 0.472);
+    position: relative;
+    min-width: 20vw;
+}
+section .search button{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E40914;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+section .search button img{
+    filter: invert(2);
+}
+footer{
+    background-color: black;
+    color: rgb(143, 134, 134);
+    padding: 60px;
+    
+}
+.footer{
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.footer-items{
+    display: flex;
+    gap: 70px;
+}
+.footer-items .p{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-items .p a{
+    font-weight: 100;
+    color: rgb(143, 134, 134);
+}
+@media screen and (max-width : 960px) {
+    .nav{
+        max-width: 100vh;
+        height: 8vh;
+    }
+    .hero-section :nth-child(1){
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .hero-section div{
+        flex-direction: column;
+        border: none;
+    }
+    .hero-section div input{
+        width: 80vw;
+    }
+    .animation .content{
+        flex-direction: column;
+    }
+    .animation .content .images{
+        width: 200px;
+    }
+    .animation .content .text> :first-child{
+        font-size: 32px;
+        text-align: center;
+    }
+    .animation .content .text> :nth-child(2){
+        font-size: 18px;
+        text-align: center;
+    }
+    .faq .search{
+        flex-wrap: wrap;
+    }
+    .footer-items{
+        flex-wrap: wrap;
+    }
+} 
